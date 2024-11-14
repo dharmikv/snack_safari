@@ -20,13 +20,21 @@
 .title h4,
 .title h5,
 .title h6{
-    @apply font-jungle 
+    @apply font-jungle tracking-wider
 }
 
+.title-roboto-font h1,
+.title-roboto-font h2,
+.title-roboto-font h3,
+.title-roboto-font h4,
+.title-roboto-font h5,
+.title-roboto-font h6{
+    @apply font-roboto 
+}
 /* ---------------------------------- font-size ---------------------------------- */
 
 
-.content p{
+.content p,footer .nav-link a{
     @apply font-roboto text-[16px] lg:text-[14px] md:text-[12px]
 }
 .anchor-links a,.btn{
@@ -83,9 +91,21 @@ h3{
     @apply px-[28px] py-[10px] rounded-full font-roboto text-[#A93800] font-boldweight
 }
 .btn-yellow{
-    @apply bg-[#F8FF00] border-2 border-[#A93800] shadow-brownshadow 
+    @apply bg-[#F8FF00] border-2 border-[#A93800] shadow-brownshadow  transition-all duration-300 ease-in-out
+}
+.btn-yellow:hover{
+    @apply bg-[#A93800] text-white transition-all duration-300 ease-in-out
 }
 .btn-white{
+    @apply bg-[#FFFFFF] border-2 border-[#A93800] shadow-brownshadow transition-all duration-300 ease-in-out
+}
+.btn-white:hover{
+    @apply bg-[#A93800] text-white transition-all duration-300 ease-in-out
+}
+.input{
+    @apply px-[28px] py-[10px] rounded-[14px] font-roboto italic
+}
+.input-white{
     @apply bg-[#FFFFFF] border-2 border-[#A93800] shadow-brownshadow
 }
 /* ---------------------------------- font-colors ---------------------------------- */
@@ -104,6 +124,9 @@ h3{
 }
 .container-fluid{
     @apply px-[3.5rem] lg:px-[2.5rem] md:px-[1.5rem] sm:px-[1rem]
+}
+.container-fluid-left{
+    @apply pl-[3.5rem] lg:pl-[2.5rem] md:px-[1.5rem] sm:px-[1rem]
 }
 .title-white h1,
 .title-white h2,
@@ -153,6 +176,21 @@ h3{
 .nav-icons:last-child{
     @apply me-0
 }
+.sidebar_menu_links .nav-link{
+    @apply text-darkGreen me-0 text-center mt-4 text-2xl
+}
+.sidebar_menu_links .nav-link:first-child{
+    @apply mt-0
+}
+footer .nav-link{
+    @apply text-[#F8FF00] mt-4 me-0
+}
+footer .nav-link:first-child{
+    @apply mt-0
+}
+footer .nav-link:hover{
+    @apply text-[#A93800]
+}
 @keyframes headerStickyAnimation {
     0% {
       opacity: 0.5;
@@ -166,20 +204,20 @@ h3{
   
 .is-sticky {
     animation: headerStickyAnimation 0.5s ease-in-out;
-    @apply fixed top-0 left-0 w-full z-[50] transition-all duration-500 bg-white/20 backdrop-blur-[35px]
+    @apply fixed top-0 left-0 w-full z-[50] transition-all duration-500 bg-white/70 backdrop-blur-[35px]
 }
 .is-sticky .nav-link{
-    @apply text-darkGreen
+    @apply text-[#A93800]
 }
 .is-sticky .nav-link:hover{
-    @apply text-[#333333]
+    @apply text-darkGreen
 }
 .is-sticky .nav-icons a img,
 .is-sticky .hamburger_menu{
-    filter: brightness(0) saturate(100%) invert(38%) sepia(10%) saturate(7492%) hue-rotate(54deg) brightness(96%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(20%) sepia(87%) saturate(2495%) hue-rotate(20deg) brightness(96%) contrast(104%);
 }
 .is-sticky .nav-icons a img:hover{
-    filter: brightness(0) saturate(100%) invert(16%) sepia(1%) saturate(0%) hue-rotate(171deg) brightness(98%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(844%) hue-rotate(50deg) brightness(99%) contrast(102%);
 }
 
 /* ---------------------------------- HEROSECTION SLIDER ---------------------------------- */
@@ -220,4 +258,25 @@ h3{
 
 .product_swiper .swiper-slide{
     @apply flex justify-center !important
+}
+
+
+.accordion-content {
+   @apply hidden
+}
+.bg-patten{
+    @apply absolute top-0 z-10 pt-[168px]
+}
+.bg-patten.right{
+    @apply !right-[0px];
+}
+.bg-patten.left{
+    @apply !left-[0px];
+}
+.bg-patten-two{
+    @apply absolute top-0 left-0
+}
+
+.social-icon{
+    @apply bg-[#F8FF00] h-[40px] w-[40px] flex justify-center items-center border-2 border-[#A93800] shadow-brownshadow rounded-full
 }

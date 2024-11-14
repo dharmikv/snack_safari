@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
+
+    <!-- ======================================= HEADER SECTION =======================================  -->
+
     <header class="fixed top-0 z-20 header w-full">
        <div class="w-full">
         <div class="bg-darkGreen inner-header flex justify-between items-center container-fluid py-4">
@@ -61,8 +64,27 @@
         </nav>
        </div>
     </header>
+
+    <!-- ======================================= SIDEBAR SECTION =======================================  -->
+     <!-- <aside class="h-screen sidebar fixed top-0 -right-full bg-white/70 backdrop-blur-[35px] w-full hidden md:flex z-[99]"> -->
+     <aside class="h-screen sidebar fixed top-0 -right-full bg-white/70 backdrop-blur-[35px] w-full hidden md:flex z-[99]">
+        <div class="container-fluid py-4 w-full">
+            <div class="w-full flex justify-end mt-[1rem] cursor-pointer close_btn">
+                <img src="../assets/images/close_btn.svg" class="w-8 h-8" alt="">
+            </div>
+            <ul class="sidebar_menu_links h-full flex flex-col justify-center ">
+                <li class="nav-link"><a href="#">Shop</a></li>
+                <li class="nav-link"><a href="#">Snack Subscription</a></li>
+                <li class="nav-link"><a href="#">Rewards</a></li>
+                <li class="nav-link"><a href="#">Wholesale</a></li>
+                <li class="nav-link"><a href="#">Contact Us</a></li>
+                <li class="nav-link"><a href="#">About Us</a></li>
+            </ul>
+        </div>
+     </aside>
+
     <main>
-        <!-- ======================================= hero section =======================================  -->
+        <!-- ======================================= HERO SECTION =======================================  -->
         
         <section class="hero_section h-screen">
             <div class="swiper w-full h-full header_swiper py-20">
@@ -71,9 +93,12 @@
                     <div class="swiper-slide">
                         <div class="relative h-full bg-[#FFED30]">
                             <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#F06700] opacity-100"></div>
-                            <div class="absolute z-10 h-full w-full flex items-end justify-center">
-                               <div class="w-full container-fluid h-full flex items-center md:flex-col-reverse md:justify-center sm:justify-center pt-[168px]">
-                                    <div class="w-6/12 md:w-full">
+                             <div class="bg-patten right md:hidden">
+                                <img src="../assets/images/pattern 1.png" alt="">
+                             </div>
+                            <div class="relative  h-full w-full flex items-end justify-center">
+                               <div class="relative z-30 w-full container-fluid h-full flex items-center md:flex-col-reverse md:justify-center sm:justify-center pt-[168px]">
+                                    <div class="w-6/12 md:w-full fade-in">
                                         <div class="banner-text max-w-[507px] md:py-[20px] xs:py-[22px]">
                                             <div class="title title-white text-shadow-brown text-border-brown">
                                                 <h1>FOOD FROM ALL OVER THE WORLD</h1>
@@ -86,7 +111,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-6/12 md:w-full">
+                                    <div class="w-6/12 md:w-full fade-in">
                                         <div class="img-hero">
                                             <img src="../assets/images/herosection_slide_one.png" alt="">
                                         </div>
@@ -101,6 +126,9 @@
                     <div class="swiper-slide">
                         <div class="relative h-full bg-[#A93800]">
                             <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#2F1409] opacity-100"></div>
+                            <div class="bg-patten left md:hidden">
+                                <img src="../assets/images/pattern 2.png" alt="">
+                             </div>
                             <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full container-fluid">
                                 <div class="container-fluid h-full flex items-center md:flex-col md:justify-center sm:justify-center pt-[150px]">
                                      <div class="w-6/12 md:w-full">
@@ -131,6 +159,9 @@
                     <div class="swiper-slide">
                         <div class="relative h-full bg-[#F8FF00]">
                             <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#457B00] opacity-100"></div>
+                            <div class="bg-patten right md:hidden">
+                                <img src="../assets/images/pattern 3.png" alt="">
+                             </div>
                             <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full container-fluid">
                                 <div class="container-fluid h-full flex items-center md:flex-col-reverse md:justify-center md:items-start sm:justify-center pt-[150px]">
                                     <div class="w-6/12 md:w-full">
@@ -156,6 +187,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="flex w-full justify-center">
                     <div class="swiper-navigation_header absolute bottom-16 md:bottom-10 w-[10rem] xs:w-[7rem] transform-inherit left-inherit right-inherit top-auto ">
                         <div class="swiper-button-next">
@@ -169,9 +201,12 @@
             </div>
         </section>
 
+        <!-- ======================================= PRODUCT SLIDER SECTION =======================================  -->
+
         <section class="product_slider pt-20 lg:pt-14 sm:pt-10">
             <div class="container-fluid">
-                <div class="flex items-center justify-between sm:flex-col sm:justify-normal sm:items-start">
+                <!-- -------------------------------- heading -------------------------------- -->
+                <div class="heading flex items-center justify-between sm:flex-col sm:justify-normal sm:items-start fade-in">
                     <div class="title title-brown">
                         <h2>Feed the Snack Beast!</h2>
                     </div>
@@ -179,7 +214,8 @@
                         <a href="#" class="btn btn-white">View More Products</a>
                     </div>
                 </div>
-                <div class="mt-10">
+                <!----------------------------------- slider -------------------------------- -->
+                <div class="mt-10 fade-in">
                     <div class="swiper w-full h-full product_swiper">
                         <div class="swiper-wrapper py-5">
                             <div class="swiper-slide">
@@ -294,12 +330,12 @@
                                 <a href="#">
                                     <div class="product-card">
                                         <div class="product_img xs:flex xs:justify-center">
-                                            <img src="../assets/images/product_1.png" class="xs:max-w-[75%] product_img" alt="">
+                                            <img src="../assets/images/product_2.png" class="xs:max-w-[75%] product_img" alt="">
                                         </div>
                                         <div class="product_content">
                                             <div class="flex items-center">
                                                 <div class="title title-brown pe-0.5 max-w-[264px] border-r border-r-[#5A5A5A]">
-                                                    <h3>Oreo Mini Biscuit Original 55g</h3>
+                                                    <h3>Lays Roasted Crispy Suckling Pig</h3>
                                                 </div>
                                                 <div class="ps-4 content content-darkgray font-boldweight">
                                                     <p>$10.00</p>
@@ -340,116 +376,367 @@
             </div>
         </section>
 
-        <section class="journey_section py-20 h-96 relative bg-[#F8FF00]">
+        <!-- ======================================= JOURNEY SECTION =======================================  -->
+
+        <section class="journey_section py-20 lg:pt-16 sm:pt-10 relative bg-[#F8FF00]">
             <div class="absolute top-0 z-10 w-full">
                 <img src="../assets/images/page_break_down.svg" class="w-full" alt="">
             </div>
             <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#457B00] opacity-100"></div>
+            <div class="container-fluid pt-[9%] relative fade-in">
+                <!-- -------------------------------- heading -------------------------------- -->
+                <div class="flex justify-center">
+                    <div class="heading max-w-[1000px] mx-auto">
+                        <div class="title title-brown">
+                            <h2>Start Your Journey</h2>
+                        </div>
+                        <div class="title title-brown text-center mt-2">
+                            <h3>Subscribe and save!</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- -------------------------------- cards -------------------------------- -->
+                <div class="grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 justify-items-center mt-10 gap-6 auto-rows-fr relative fade-in">
+                    <div class="journey_card flex flex-col h-full ">
+                        <div class="flex justify-center">
+                            <div class="img max-w-[279px]">
+                                <img src="../assets/images/journey_section_one.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-grow pt-[60px] mt-4 relative">
+                            <div class="absolute top-0 left-0 bg-white py-3 px-6 2xl:py-4 md:py-[18px] rounded-full z-10 flex items-center justify-center border-2 border-[#A93800] shadow-brownshadow">
+                                <div class="title-roboto-font title-brown font-boldweight">
+                                    <h2>1</h2>
+                                </div>
+                            </div>                            
+                            <div class="flex flex-col bg-white/50 p-[40px] lg:p-[30px] sm:p-[20px] rounded-[20px] border border-white h-full">
+                                <div class="title title-brown">
+                                    <h3>Build Your Own Box</h3>
+                                </div>
+                                <div class="content content-darkgray max-w-[360px] mt-3">
+                                    <p>Build your box with your personal snack box from an unlimited selection of drinks, candy, and chips. Any order of $40 or more will receive free shipping.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="btn btn-yellow">Build A Box</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey_card flex flex-col h-full">
+                        <div class="flex justify-center">
+                            <div class="img max-w-[279px]">
+                                <img src="../assets/images/journey_section_two.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-grow pt-[60px] mt-4 relative">
+                            <div class="absolute top-0 left-0 bg-white py-3 px-6 2xl:py-4 md:py-[18px] rounded-full z-10 flex items-center justify-center border-2 border-[#A93800] shadow-brownshadow">
+                                <div class="title-roboto-font title-brown font-boldweight">
+                                    <h2>2</h2>
+                                </div>
+                            </div> 
+                            <div class="flex flex-col bg-white/50 p-[40px] lg:p-[30px] sm:p-[20px] rounded-[20px] border border-white h-full">
+                                <div class="title title-brown">
+                                    <h3>Build Your Own Box</h3>
+                                </div>
+                                <div class="content content-darkgray max-w-[360px] mt-3">
+                                    <p>You can choose the duration and size of your subscription package. We offer 3 month, 6 month, and 9 month subscriptions with competitive prices. Choose your snack package size ranging from 5-7 items, 10-12 items, and our party pack 18-20 items.</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="btn btn-yellow">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey_card flex flex-col h-full">
+                        <div class="flex justify-center">
+                            <div class="img max-w-[279px]">
+                                <img src="../assets/images/journey_section_three.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-grow pt-[60px] mt-4 relative">
+                            <div class="absolute top-0 left-0 bg-white py-3 px-6 2xl:py-4 md:py-[18px] rounded-full z-10 flex items-center justify-center border-2 border-[#A93800] shadow-brownshadow">
+                                <div class="title-roboto-font title-brown font-boldweight">
+                                    <h2>3   </h2>
+                                </div>
+                            </div> 
+                            <div class="flex flex-col bg-white/50 p-[40px] lg:p-[30px] sm:p-[20px] rounded-[20px] border border-white h-full">
+                                <div class="title title-brown">
+                                    <h3>Build Your Own Box</h3>
+                                </div>
+                                <div class="content content-darkgray max-w-[360px] mt-3">
+                                    <p>Our year-round subscription provides a unique assortment of snacks from a different country each month. For a one time payment of $00.00 experience exclusive snacks from around the world each month!</p>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#" class="btn btn-yellow">Start Year-Round Subscription</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ======================================= ROUND SUBSCRIPTION SECTION =======================================  -->
+
+        <section class="round_subscription pt-20 md:pt-10 relative bg-[#A93800] overflow-hidden">
+            <div class="absolute bottom-0 z-10 w-full">
+                <img src="../assets/images/page_break_down_second.svg" class="w-full" alt="">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#2F1409] opacity-100"></div>
+            <div class="bg-patten-two md:hidden">
+                <img src="../assets/images/pattern 4.png" alt="">
+             </div>
+            <div class="container-fluid-left relative pb-[12%]">
+                <div class="w-full flex items-center h-full md:flex-col-reverse md:items-start gap-6">
+                    <div class="w-6/12 md:w-full flex md:flex-col-reverse justify-between gap-3 items-center fade-in">
+                        <div class="max-w-[440px] flex flex-col justify-center h-full md:pb-5">
+                            <div class="title title-white">
+                                <h3>Get Snacks</h3>
+                                <h2>For A Whole Year</h2>
+                            </div>
+                            <div class="content content-white mt-2">
+                                <p>Join our snack subscription and embark on a flavorful journey every month! Enjoy a handpicked selection of tasty treats delivered right to your door, tailored to your specified tastes. Each month explore a different country with unique snacks of that culture. Subscribe now and indulge in a world of deliciousness!</p>
+                            </div>
+                            <div class="mt-5">
+                                <a href="#" class="btn btn-yellow">Start Year-Round Subscription</a>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation_subscription flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5">
+                            <div class="swiper-button-pre cursor-pointer">
+                                <img src="../assets/images/header_swiper_left_arrow.png" class="min-w-[48px] min-h-[48px] xs:min-w-[36px] xs:min-h-[36px]" alt="">
+                            </div>
+                            <div class="swiper-button-nex cursor-pointer">
+                                <img src="../assets/images/header_swiper_right_arrow.png" class="min-w-[48px] min-h-[48px] xs:min-w-[36px] xs:min-h-[36px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6/12 md:w-full flex items-center h-full pl-20 md:pl-0 fade-in">    
+                        <div class="swiper subscription_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class=" md:flex md:justify-center">
+                                        <div class="max-w-[557px] flex justify-center">
+                                            <img src="../assets/images/China.png" class="md:w-[60%]" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" md:flex md:justify-center">
+                                        <div class="max-w-[557px] flex justify-center">
+                                            <img src="../assets/images/Japan.png" class="md:w-[60%]" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ======================================= ACCORDION SECTION =======================================  -->
+
+        <section class="accordion_section pt-5 pb-20 lg:pb-16 sm:pb-10 mt-0">
+            <div class="container-fluid">
+                <div class="cartoon_img flex justify-center fade-in">
+                    <img src="../assets/images/cartoon_map.png" alt="">
+                </div>
+               <div class="flex justify-center">
+                    <div class="title title-brown mt-6">
+                        <h2>Still Have Questions?</h2>
+                    </div>
+               </div>
+    
+                <div class="accordions mt-6 max-w-[800px] mx-auto fade-in">
+                <div class="accordion-item">
+                  <div class="accordion-header flex justify-between items-center p-4 bg-[#F06700] rounded-t-[14px] rounded-b-[14px] cursor-pointer border-2 border-[#A93800] shadow-brownshadow transition-all duration-100" id="accordion1">
+                    <div class="title-roboto title-white">
+                      <h3>How do I change my shipping address?</h3>
+                    </div>
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00965 11.4777L0.410236 2.87806C-0.137074 2.33101 -0.137074 1.44408 0.410236 0.897299C0.957058 0.350477 1.84395 0.350477 2.39073 0.897299L9.9999 8.50669L17.6088 0.897521C18.1558 0.350698 19.0427 0.350698 19.5895 0.897521C20.1365 1.44434 20.1365 2.33124 19.5895 2.87828L10.9899 11.478C10.7164 11.7514 10.3583 11.8879 9.99994 11.8879C9.64146 11.8879 9.28306 11.7511 9.00965 11.4777Z" fill="white"/>
+                    </svg>
+                        
+                    
+                  </div>
+                  <div class="accordion-content content content-white bg-[#A93800] p-4 rounded-b-[14px]">
+                    <p>Lorem ipsum dolor sit amet consectetur. Malesuada volutpat amet lacus lacinia mauris. Vel pellentesque aliquam enim pharetra ultrices velit consectetur pellentesque. Quis neque et ipsum lorem facilisis pellentesque fermentum id. Nunc adipiscing purus pretium semper.</p>
+                  </div>
+                </div>
+              
+                <div class="accordion-item mt-4">
+                  <div class="accordion-header flex justify-between items-center p-4 bg-[#F06700] rounded-t-[14px] rounded-b-[14px] cursor-pointer border-2 border-[#A93800] shadow-brownshadow transition-all duration-100" id="accordion2">
+                    <div class="title-roboto title-white">
+                      <h3>How do I sign up for a subscription service?</h3>
+                    </div>
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00965 11.4777L0.410236 2.87806C-0.137074 2.33101 -0.137074 1.44408 0.410236 0.897299C0.957058 0.350477 1.84395 0.350477 2.39073 0.897299L9.9999 8.50669L17.6088 0.897521C18.1558 0.350698 19.0427 0.350698 19.5895 0.897521C20.1365 1.44434 20.1365 2.33124 19.5895 2.87828L10.9899 11.478C10.7164 11.7514 10.3583 11.8879 9.99994 11.8879C9.64146 11.8879 9.28306 11.7511 9.00965 11.4777Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-content content content-white bg-[#A93800] p-4 rounded-b-[14px]">
+                    <p>Lorem ipsum dolor sit amet consectetur. Malesuada volutpat amet lacus lacinia mauris. Vel pellentesque aliquam enim pharetra ultrices velit consectetur pellentesque. Quis neque et ipsum lorem facilisis pellentesque fermentum id. Nunc adipiscing purus pretium semper.</p>
+                  </div>
+                </div>
+            
+                <div class="accordion-item mt-4">
+                  <div class="accordion-header flex justify-between items-center p-4 bg-[#F06700] rounded-t-[14px] rounded-b-[14px] cursor-pointer border-2 border-[#A93800] shadow-brownshadow transition-all duration-100" id="accordion3">
+                    <div class="title-roboto title-white">
+                      <h3>How do I track my order?</h3>
+                    </div>
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00965 11.4777L0.410236 2.87806C-0.137074 2.33101 -0.137074 1.44408 0.410236 0.897299C0.957058 0.350477 1.84395 0.350477 2.39073 0.897299L9.9999 8.50669L17.6088 0.897521C18.1558 0.350698 19.0427 0.350698 19.5895 0.897521C20.1365 1.44434 20.1365 2.33124 19.5895 2.87828L10.9899 11.478C10.7164 11.7514 10.3583 11.8879 9.99994 11.8879C9.64146 11.8879 9.28306 11.7511 9.00965 11.4777Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-content content content-white bg-[#A93800] p-4 rounded-b-[14px]">
+                    <p>Lorem ipsum dolor sit amet consectetur. Malesuada volutpat amet lacus lacinia mauris. Vel pellentesque aliquam enim pharetra ultrices velit consectetur pellentesque. Quis neque et ipsum lorem facilisis pellentesque fermentum id. Nunc adipiscing purus pretium semper.</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="mt-8 w-full flex justify-center fade-in">
+                    <a href="#" class="btn btn-yellow">More FAQs</a>
+                </div>
+            </div>
+            
         </section>
     </main>
     
+    <footer class="bg-darkGreen py-20 lg:pt-16 sm:pt-10 relative overflow-hidden">
+        <div class="bg-patten-two md:hidden w-full">
+            <img src="../assets/images/pattern 5.png" class="w-full" alt="">
+         </div>
+       <div class="container-fluid relative h-full">
+        <!-- ------------------------------------ first part ------------------------------------ -->
+
+        <div class="flex items-center justify-between gap-6 md:flex-col w-full">
+            <div class="images grid grid-cols-4 md:grid-cols-2 gap-6 w-8/12 md:w-full px-4 md:justify-items-center">
+                <div class="rounded-[20px]">
+                    <img src="../assets/images/footer_img_1.png" class="rounded-[20px] border-2 border-darkYellow" alt="">
+                </div>
+                <div class="rounded-[20px]">
+                    <img src="../assets/images/footer_img_2.png" class="rounded-[20px] border-2 border-darkYellow" alt="">
+                </div>
+                <div class="rounded-[20px]">
+                    <img src="../assets/images/footer_img_3.png" class="rounded-[20px] border-2 border-darkYellow" alt="">
+                </div>
+                <div class="rounded-[20px]">
+                    <img src="../assets/images/footer_img_4.png" class="rounded-[20px] border-2 border-darkYellow" alt="">
+                </div>
+            </div>
+            <div class="w-4/12 md:w-full">
+               <div class="w-full flex justify-end md:justify-center">
+                    <div class="flex flex-col footer_content max-w-[298px] md:w-full">
+                        <div class="title title-white md:text-center">
+                            <h3>Follow Us on Instagram</h3>
+                        </div>
+                        <div class="mt-6 md:w-full md:flex md:justify-center">
+                            <a href="#" class="btn btn-yellow">@ thesnacksafari</a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------ seperator part ------------------------------------ -->
+
+        <div class="h-[1px] bg-white my-16 md:my-6 px-4">
+        </div>
+
+        <!-- ------------------------------------ link part ------------------------------------ -->
+        
+        <div class="grid grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-6 sm:justify-items-center">
+            <div class="footer_content max-w-[449px]">
+                <div class="title title-white">
+                    <h2>Join Our Newsletter</h2>
+                </div>
+                <div class="mt-5 flex items-center md:flex-col md:items-start sm:items-center">
+                    <div>
+                        <input type="email" placeholder="Email Address" class="input input-white">
+                    </div>
+                    <div class="ms-4 md:ms-0 md:mt-4">
+                        <a href="#" class="btn btn-yellow">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center lg:justify-normal sm:justify-center sm:text-center sm:mt-2">
+                <ul>
+                    <li class="nav-link"><a href="#">Privacy Policy</a></li>
+                    <li class="nav-link"><a href="#">Terms of Service</a></li>
+                    <li class="nav-link"><a href="#">Return & Refunds</a></li>
+                    <li class="nav-link"><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="w-full flex justify-center lg:justify-normal sm:justify-center sm:text-center sm:mt-2">
+                <ul>
+                    <li class="nav-link"><a href="#">About Us</a></li>
+                    <li class="nav-link"><a href="#">Mission Statement</a></li>
+                    <li class="nav-link"><a href="#">Subscription</a></li>
+                    <li class="nav-link"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+              <div class="flex items-center sm:justify-center">
+                <div class="content content-white font-boldweight pe-4 border-r border-r-white">
+                    <p>© 2024 Snack Safari</p>
+                </div>
+                <div class="flex ps-4 items-center">
+                    <div>
+                        <img src="../assets/images/heart.svg" alt="">
+                    </div>
+                    <div class="content content-white ms-2 whitespace-nowrap">
+                        <p>// TECHYSCOUTS</p>
+                    </div>
+                </div>
+                
+              </div>  
+              <div class="flex space-x-2 social-icons mt-4">
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/instagram icon.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/facebook icon.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/tiktok logo.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/twitter icon.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/yelp icon.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/youtube icon.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-icon">
+                       <img src="../assets/images/linkedin icon.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+       </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <div class="grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 justify-items-center gap-6 py-6">
-    <div class="product-card">
-        <div class="product_img">
-            <img src="../assets/images/product_1.png" alt="">
-        </div>
-        <div class="product_content">
-            <div class="flex items-center">
-                <div class="title title-brown pe-0.5 max-w-[264px] border-r border-r-[#5A5A5A]">
-                    <h3>Oreo Mini Biscuit Original 55g</h3>
-                </div>
-                <div class="ps-4 content content-darkgray font-boldweight">
-                    <p>$10.00</p>
-                </div>
-            </div>
-            <div class="flex items-center mt-3">
-                <div class="content content-darkgray font-normalweight mt-1">
-                    <p>0 Reviews</p>
-                </div>
-                <div class="reviews ms-4">
-                    <div class="stars flex items-center space-x-1">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5">
-                <a href="#" class="btn btn-yellow">Shop Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="product-card">
-        <div class="product_img">
-            <img src="../assets/images/product_2.png" alt="">
-        </div>
-        <div class="product_content">
-            <div class="flex items-center">
-                <div class="title title-brown pe-0.5 max-w-[264px] border-r border-r-[#5A5A5A]">
-                    <h3>Lays Roasted Crispy Suckling Pig</h3>
-                </div>
-                <div class="ps-4 content content-darkgray font-boldweight">
-                    <p>$10.00</p>
-                </div>
-            </div>
-            <div class="flex items-center mt-3">
-                <div class="content content-darkgray font-normalweight mt-1">
-                    <p>0 Reviews</p>
-                </div>
-                <div class="reviews ms-4">
-                    <div class="stars flex items-center space-x-1">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5">
-                <a href="#" class="btn btn-yellow">Shop Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="product-card">
-        <div class="product_img">
-            <img src="../assets/images/product_3.png" alt="">
-        </div>
-        <div class="product_content">
-            <div class="flex items-center">
-                <div class="title title-brown pe-0.5 max-w-[264px] border-r border-r-[#5A5A5A]">
-                    <h3>Hongyuan Popping Grape/Apple</h3>
-                </div>
-                <div class="ps-4 content content-darkgray font-boldweight">
-                    <p>$10.00</p>
-                </div>
-            </div>
-            <div class="flex items-center mt-3">
-                <div class="content content-darkgray font-normalweight mt-1">
-                    <p>0 Reviews</p>
-                </div>
-                <div class="reviews ms-4">
-                    <div class="stars flex items-center space-x-1">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                        <img src="../assets/images/star.svg" class="w-5 h-5" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5">
-                <a href="#" class="btn btn-yellow">Shop Now</a>
-            </div>
-        </div>
-    </div>
-</div> -->

@@ -38,8 +38,11 @@ module.exports = {
       },
       dropShadow:{
         browndropshadow:"0px 4px 10px 0px rgba(169, 56, 0, 1)"
-      }
-      
+      },
+      filter: {
+        'custom-filter': 'brightness(0) saturate(100%) invert(20%) sepia(87%) saturate(2495%) hue-rotate(20deg) brightness(96%) contrast(104%)',
+        'custom-hover-filter': 'brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(844%) hue-rotate(50deg) brightness(99%) contrast(102%)',
+      },
     },
   },
   plugins: [],
